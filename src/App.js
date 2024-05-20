@@ -40,9 +40,9 @@ function App() {
 
   return (
     <div className="container">
-      <div className="App">     
-        <div className="form-container">
+      <div className="App">
         <h1>Gerenciador de Serviços</h1>
+        <div className="form-container">
           <div className="form">
             <input 
               type="text" 
@@ -66,14 +66,18 @@ function App() {
         <div className="service-list-container">
           <h2>Lista de Serviços</h2>
           <div className="service-list">
-            {services.map(service => (
-              <div key={service.id} className="service-item">
-                <h3>{service.name}</h3>
-                <p>{service.description}</p>
-                <button className="edit-button" onClick={() => handleEditService(service.id)}>Editar</button>
-                <button className="delete-button" onClick={() => handleDeleteService(service.id)}>Excluir</button>
-              </div>
-            ))}
+            {services.length === 0 ? (
+              <p className="empty-message">Nenhum serviço cadastrado.</p>
+            ) : (
+              services.map(service => (
+                <div key={service.id} className="service-item">
+                  <h3>{service.name}</h3>
+                  <p>{service.description}</p>
+                  <button className="edit-button" onClick={() => handleEditService(service.id)}>Editar</button>
+                  <button className="delete-button" onClick={() => handleDeleteService(service.id)}>Excluir</button>
+                </div>
+              ))
+            )}
           </div>
         </div>
       </div>

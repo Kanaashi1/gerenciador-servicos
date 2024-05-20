@@ -120,3 +120,10 @@ h1, h2 {
 .service-item button.delete-button:hover {
   background-color: #c82333;
 }
+
+.empty-message {
+  text-align: center;
+  color: #555;
+  font-style: italic;
+  margin-top: 20px;
+}

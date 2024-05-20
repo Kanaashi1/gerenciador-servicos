@@ -1,0 +1,80 @@
+.App {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.form input {
+  margin: 5px 0;
+  padding: 10px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form button:hover {
+  background-color: #218838;
+}
+
+.service-list {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.service-item {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.service-item h3 {
+  margin: 0;
+}
+
+.service-item p {
+  margin: 5px 0 10px;
+}
+
+.service-item button {
+  margin-right: 10px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.service-item button:hover {
+  opacity: 0.8;
+}
+
+.service-item button:nth-child(1) {
+  background-color: #007bff;
+  color: white;
+}
+
+.service-item button:nth-child(2) {
+  background-color: #dc3545;
+  color: white;
+}

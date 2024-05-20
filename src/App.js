@@ -66,8 +66,8 @@ function App() {
           <div key={service.id} className="service-item">
             <h3>{service.name}</h3>
             <p>{service.description}</p>
-            <button onClick={() => handleEditService(service.id)}>Editar</button>
-            <button onClick={() => handleDeleteService(service.id)}>Excluir</button>
+            <button className="edit-button" onClick={() => handleEditService(service.id)}>Editar</button>
+            <button className="delete-button" onClick={() => handleDeleteService(service.id)}>Excluir</button>
           </div>
         ))}
       </div>

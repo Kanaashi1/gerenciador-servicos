@@ -78,3 +78,21 @@ h1, h2 {
   background-color: #dc3545;
   color: white;
 }
+
+.service-item button.edit-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.service-item button.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.service-item button.delete-button {
+  background-color: #dc3545;
+  color: white;
+}
+
+.service-item button.delete-button:hover {
+  background-color: #c82333;
+}

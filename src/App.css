@@ -12,7 +12,7 @@ body {
 .container {
   width: 80%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
+  background: rgba(255, 255, 255, 0.9);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -28,7 +28,7 @@ h1, h2 {
 }
 
 .form-container, .service-list-container {
-  background: rgba(255, 255, 255, 0.8); /* Fundo branco com maior opacidade */
+  background: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -73,14 +73,14 @@ h1, h2 {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
-  overflow: hidden; /* Esconde o conteúdo que ultrapassar a borda */
+  overflow: hidden; 
 }
 
 .service-item h3, .service-item p {
   margin: 0;
-  word-wrap: break-word; /* Quebra as palavras longas */
+  word-wrap: break-word; 
   overflow: hidden;
-  text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
+  text-overflow: ellipsis;
 }
 
 .service-item h3 {

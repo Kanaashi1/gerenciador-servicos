@@ -12,7 +12,7 @@ body {
 .container {
   width: 80%;
   max-width: 800px;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(255, 255, 255, 0.9); /* Fundo branco com opacidade */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -23,12 +23,19 @@ body {
   width: 100%;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 h1, h2 {
   text-align: center;
+  margin: 10px 0;
 }
 
 .form-container, .service-list-container {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.8); /* Fundo branco com maior opacidade */
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
@@ -63,6 +70,48 @@ h1, h2 {
   background-color: #218838;
 }
 
+.search-icon {
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.search-container {
+  position: relative;
+  margin-bottom: 20px;
+  text-align: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.search-input {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.suggestions-container {
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  right: 10%;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 150px;
+  overflow-y: auto;
+  z-index: 1000;
+}
+
+.suggestion-item {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.suggestion-item:hover {
+  background-color: #f0f0f0;
+}
+
 .service-list {
   width: 100%;
 }
@@ -73,14 +122,14 @@ h1, h2 {
   padding: 10px;
   margin-bottom: 10px;
   background-color: #f9f9f9;
-  overflow: hidden; 
+  overflow: hidden; /* Esconde o conteúdo que ultrapassar a borda */
 }
 
 .service-item h3, .service-item p {
   margin: 0;
-  word-wrap: break-word; 
+  word-wrap: break-word; /* Quebra as palavras longas */
   overflow: hidden;
-  text-overflow: ellipsis;
+  text-overflow: ellipsis; /* Adiciona reticências ao final do texto */
 }
 
 .service-item h3 {
@@ -126,4 +175,15 @@ h1, h2 {
   color: #555;
   font-style: italic;
   margin-top: 20px;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
